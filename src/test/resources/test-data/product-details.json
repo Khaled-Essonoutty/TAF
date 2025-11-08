@@ -1,0 +1,17 @@
+{
+  "product1": {
+    "name": "Men Tshirt",
+    "price": "Rs. 400",
+    "quantity": "1",
+    "total-price": "Rs. 400"
+  },
+  "messages": {
+    "product-added": "Your product has been added to cart.",
+    "alert-success-review-message": "Thank you for your review."
+  },
+  "review": {
+    "name": "Khaled",
+    "email": "khaled22@gmail.com",
+    "review-message": "Item is very Good."
+  }
+}
