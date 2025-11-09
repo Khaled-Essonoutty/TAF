@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Chrome_Linux_Report
-          path: "test-output/reports/*.html"
+          path: "test-outputs/reports/*.html"
 
   Edge_Windows_Test:
     runs-on: windows-latest
