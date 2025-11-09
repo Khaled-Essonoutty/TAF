@@ -71,4 +71,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Edge_Windows_Report
-          path: "test-output/reports/*.html"
+          path: "test-outputs/reports/*.html"
