@@ -117,7 +117,7 @@ public class DownloadInvoiceTest extends BaseTest {
     public void preConditions() {
         driver = new GUIDriver();
         driver.browser().navigateToURL(PropertiesFileReader.getPropertyValue("baseUrlWeb"));
-        driver.browser().closeExtensionWindow();
+        //driver.browser().closeExtensionWindow();
         testData = new JsonReader("E2E-data");
     }
 

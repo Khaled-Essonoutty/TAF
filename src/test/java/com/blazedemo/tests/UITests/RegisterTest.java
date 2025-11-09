@@ -79,7 +79,7 @@ public class RegisterTest extends BaseTest {
     void setup() {
         driver = new GUIDriver();
         new NavigationBarComponent(driver).navigate();
-        driver.browser().closeExtensionWindow();
+        //driver.browser().closeExtensionWindow();
         testData = new JsonReader("register-data");
     }
 

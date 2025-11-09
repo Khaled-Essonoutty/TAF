@@ -42,7 +42,7 @@ public class ProductsTest extends BaseTest {
     {
         driver = new GUIDriver();
         driver.browser().navigateToURL(PropertiesFileReader.getPropertyValue("baseUrlWeb"));
-        driver.browser().closeExtensionWindow();
+        //driver.browser().closeExtensionWindow();
         testData = new JsonReader("products-data");
     }
 
