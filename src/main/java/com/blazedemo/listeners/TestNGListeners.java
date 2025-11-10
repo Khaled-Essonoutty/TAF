@@ -52,7 +52,7 @@ public class TestNGListeners implements IExecutionListener, IInvokedMethodListen
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         WebDriver driver = null;
         if(method.isTestMethod()){
-            if(testResult.getInstance() instanceof UITest)
+            if(testResult.getInstance().getClass().isAnnotationPresent(UITest.class))
             {
                 ScreenRecordUtils.stopRecording(testResult.getName());
                 /*

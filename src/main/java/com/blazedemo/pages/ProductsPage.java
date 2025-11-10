@@ -20,7 +20,7 @@ public class ProductsPage {
     //Locators
     private final By searchProductBar = By.id("search_product");
     private final By searchProductButton = By.id("submit_search");
-    private final By itemAddedLabel = By.cssSelector(".modal-body > p:nth-of-type(1)");
+    private final By itemAddedLabel = By.cssSelector(".modal-body > p");
     private final By continueShoppingButton = By.cssSelector(".modal-footer > button:nth-of-type(1)");
     private final By viewCart = By.xpath("//a[.='View Cart']");
 
