@@ -131,7 +131,7 @@ public class ElementActions {
     }
 
     public WebElement findElement(By locator) {
-        LogsUtil.info("Finding element: " + locator.toString());
+        //LogsUtil.info("Finding element: " + locator.toString());
         return driver.findElement(locator);
     }
 }
