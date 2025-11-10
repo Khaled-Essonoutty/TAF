@@ -41,6 +41,11 @@ public class ProductsPage {
         return By.xpath("//div[@class='features_items']//div[@class='overlay-content']//p[.='" + productName + "']//following::div[@class='choose'][1]");
     }
 
+    private By hoverOnProduct(String productName) {
+        return By.xpath("//div[@class='productinfo text-center'] /p[.='" + productName + "']");
+    }
+
+
     //Actions
     @Step("Navigating to Products page")
     public ProductsPage navigate()
@@ -51,7 +56,7 @@ public class ProductsPage {
     @Step("Adding Item to the cart: {productName}")
     public ProductsPage addItemToCart(String productName)
     {
-        driver.element().hover(productName(productName))
+        driver.element().hover(hoverOnProduct(productName))
                 .clickButton(addToCartButton(productName));
         return this;
     }
