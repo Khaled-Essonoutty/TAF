@@ -26,19 +26,19 @@ public class ProductsPage {
 
 
     private By productName(String productName) {
-        return By.xpath("//div[@class='overlay-content']//p[.='" + productName + "']");
+        return By.xpath("//div[@class='features_items']//div[@class='overlay-content']//p[.='" + productName + "']");
     }
 
     private By productPrice(String productName) {
-        return By.xpath("//div[@class='overlay-content']//p[.='" + productName + "']//preceding-sibling::h2");
+        return By.xpath("//div[@class='features_items']//div[@class='overlay-content']//p[.='" + productName + "']//preceding-sibling::h2");
     }
 
     private By addToCartButton(String productName) {
-        return By.xpath("//div[@class='overlay-content']//p[.='" + productName + "']//following::a");
+        return By.xpath("//div[@class='features_items']//div[@class='overlay-content']//p[.='" + productName + "']//following::a");
     }
 
     private By viewProduct(String productName) {
-        return By.xpath("//div[@class='overlay-content']//p[.='" + productName + "']//following::div[@class='choose'][1]");
+        return By.xpath("//div[@class='features_items']//div[@class='overlay-content']//p[.='" + productName + "']//following::div[@class='choose'][1]");
     }
 
     //Actions
